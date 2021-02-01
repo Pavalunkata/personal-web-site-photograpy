@@ -1,28 +1,29 @@
 import React from "react";
-import home1 from "../img/home1.png"
+import home1 from "../img/home1.png";
+import {StyledLayout, StyledDescription, StyledHide, StyledImage} from "../style";
 
 const AboutUsSection = () =>{
     return(
-        <div>
-            <div className="discription">
+        <StyledLayout>
+            <StyledDescription>
                 <div className="title">
-                    <div className="hide">
+                    <StyledHide>
                         <h2>We work to make</h2>
-                    </div>
-                    <div className="hide">
+                    </StyledHide>
+                    <StyledHide>
                         <h2>your <span>dreams</span> come</h2>
-                    </div>
-                    <div className="hide">
+                    </StyledHide>
+                    <StyledHide>
                         <h2>true.</h2>
-                    </div>
+                    </StyledHide>
                 </div>
                 <p>Contact us for any fotography or videography ideas that you have. We have profesionals with amazing skills.</p>
                 <button>Contact Us</button>
-                <div className="image">
+            </StyledDescription>
+            <StyledImage>
                     <img src={home1} alt="guy with camera"/>
-                </div>
-            </div>
-        </div>
+                </StyledImage>
+        </StyledLayout>
     )
 }
 
